@@ -1,9 +1,11 @@
 package hello.example.designpattern.strategy;
 
+import hello.example.designpattern.strategy.duck.Duck;
+import hello.example.designpattern.strategy.duck.MallardDuck;
+import hello.example.designpattern.strategy.duck.RedHeadDuck;
+import hello.example.designpattern.strategy.duck.RubberDuck;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 class DuckTest {

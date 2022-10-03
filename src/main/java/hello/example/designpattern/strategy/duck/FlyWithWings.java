@@ -1,4 +1,4 @@
-package hello.example.designpattern.strategy;
+package hello.example.designpattern.strategy.duck;
 
 public class FlyWithWings implements FlyBehavior {
     public void fly() {

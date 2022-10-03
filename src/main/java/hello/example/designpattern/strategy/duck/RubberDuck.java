@@ -1,4 +1,4 @@
-package hello.example.designpattern.strategy;
+package hello.example.designpattern.strategy.duck;
 
 public class RubberDuck extends Duck {
 
