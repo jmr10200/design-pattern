@@ -30,11 +30,11 @@ public class BeverageTest {
     @Test
     void espressoWithSoyAndMocha() {
         Beverage esp = new Espresso();
-        esp = new Soy(esp);
-        esp = new Mocha(esp);
-        log.info("espressoWithSoyAndMocha.getDescription() = {}", esp.getDescription());
-        log.info("espressoWithSoyAndMocha.cost() = {}", esp.cost());
-        assertThat(esp.cost()).isEqualTo(
+        Beverage withSoy = new Soy(esp);
+        Beverage withSoyMocha = new Mocha(withSoy);
+        log.info("espressoWithSoyAndMocha.getDescription() = {}", withSoyMocha.getDescription());
+        log.info("espressoWithSoyAndMocha.cost() = {}", withSoyMocha.cost());
+        assertThat(withSoyMocha.cost()).isEqualTo(
                 CostConstant.ESPRESSO_COST + CostConstant.SOY_COST + CostConstant.MOCHA_COST
         );
     }
