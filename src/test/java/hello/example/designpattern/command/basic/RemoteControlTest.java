@@ -15,6 +15,11 @@ class RemoteControlTest {
         remoteControl.setCommand(onCommand);
         remoteControl.buttonWasPressed();
 
+        LightOffCommand offCommand = new LightOffCommand(light);
+
+        remoteControl.setCommand(offCommand);
+        remoteControl.buttonWasPressed();
+
         Curtain curtain = new Curtain();
         CurtainOpenCommand openCommand = new CurtainOpenCommand(curtain);
 

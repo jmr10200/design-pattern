@@ -1,6 +1,7 @@
 package hello.example.designpattern.command.basic;
 
-public class CurtainOpenCommand implements Command{
+public class CurtainOpenCommand implements Command {
+
     Curtain curtain;
 
     public CurtainOpenCommand(Curtain curtain) {
