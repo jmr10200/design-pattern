@@ -1,4 +1,4 @@
-package hello.example.designpattern.factory.simplefactory;
+package hello.example.designpattern.factory;
 
 public class PizzaType {
     public static final String CHEESE = "cheese";

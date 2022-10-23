@@ -1,5 +1,6 @@
 package hello.example.designpattern.factory.simplefactory;
 
+import hello.example.designpattern.factory.PizzaType;
 import org.junit.jupiter.api.Test;
 
 class PizzaStoreTest {
