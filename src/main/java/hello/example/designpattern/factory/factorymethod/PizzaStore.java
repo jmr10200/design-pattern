@@ -1,4 +1,4 @@
-package hello.example.designpattern.factory.simplefactoryextend;
+package hello.example.designpattern.factory.factorymethod;
 
 public abstract class PizzaStore {
     // Pizza 인스턴스를 만드는 일은 팩토리 역할을 하는 인스턴스에서

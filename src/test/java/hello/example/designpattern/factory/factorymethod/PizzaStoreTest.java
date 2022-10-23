@@ -1,9 +1,7 @@
-package hello.example.designpattern.factory.simplefactoryextend;
+package hello.example.designpattern.factory.factorymethod;
 
 import hello.example.designpattern.factory.PizzaType;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PizzaStoreTest {
 

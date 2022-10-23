@@ -1,4 +1,4 @@
-package hello.example.designpattern.factory.simplefactoryextend;
+package hello.example.designpattern.factory.factorymethod;
 
 import java.util.ArrayList;
 import java.util.List;

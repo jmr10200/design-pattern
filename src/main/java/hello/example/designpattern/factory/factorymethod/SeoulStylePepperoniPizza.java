@@ -1,4 +1,4 @@
-package hello.example.designpattern.factory.simplefactoryextend;
+package hello.example.designpattern.factory.factorymethod;
 
 public class SeoulStylePepperoniPizza extends Pizza {
     public SeoulStylePepperoniPizza() {
