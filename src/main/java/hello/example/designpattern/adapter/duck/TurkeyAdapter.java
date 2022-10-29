@@ -1,4 +1,4 @@
-package hello.example.designpattern.adapter;
+package hello.example.designpattern.adapter.duck;
 
 // Duck 시스템에 Turkey 를 이용하기위한 어댑터
 public class TurkeyAdapter implements Duck {

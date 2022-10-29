@@ -1,4 +1,4 @@
-package hello.example.designpattern.adapter;
+package hello.example.designpattern.adapter.duck;
 
 public class MallardDuck implements Duck {
     public void quack() {

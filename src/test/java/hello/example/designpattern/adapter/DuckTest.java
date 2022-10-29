@@ -1,5 +1,9 @@
 package hello.example.designpattern.adapter;
 
+import hello.example.designpattern.adapter.duck.Duck;
+import hello.example.designpattern.adapter.duck.MallardDuck;
+import hello.example.designpattern.adapter.duck.TurkeyAdapter;
+import hello.example.designpattern.adapter.duck.WildTurkey;
 import org.junit.jupiter.api.Test;
 
 class DuckTest {
