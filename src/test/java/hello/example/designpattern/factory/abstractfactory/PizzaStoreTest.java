@@ -26,4 +26,20 @@ class PizzaStoreTest {
         System.out.println("부산 피자 주문 3");
 
     }
+
+    @Test
+    void abstractFactoryTest() {
+        PizzaStore seoulStore = new SeoulPizzaStore();
+        PizzaStore busanStore = new BusanPizzaStore();
+
+        System.out.println("서울 피자 주문 1");
+        Pizza seoul1 = seoulStore.orderPizza(PizzaType.PEPPERONI);
+        System.out.println("서울 피자 주문 2");
+        Pizza seoul2 = seoulStore.orderPizza(PizzaType.VEGGIE);
+        System.out.println("부산 피자 주문 1");
+        Pizza busan1 = busanStore.orderPizza(PizzaType.PEPPERONI);
+        System.out.println("부산 피자 주문 2");
+        Pizza busan2 = busanStore.orderPizza(PizzaType.VEGGIE);
+
+    }
 }

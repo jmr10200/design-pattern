@@ -37,7 +37,7 @@ public abstract class Pizza {
     public String toString() {
         // 피자 정보 표시
         StringBuilder sb = new StringBuilder();
-        sb.append("===== " + name + " =====\n");
+        sb.append("===== " + name + " 피자 정보 =====\n");
         sb.append("dough = " + dough + "\n");
         sb.append("sauce = " + sauce + "\n");
         for (String topping : toppings) {
