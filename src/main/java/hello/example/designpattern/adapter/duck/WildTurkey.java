@@ -2,7 +2,7 @@ package hello.example.designpattern.adapter.duck;
 
 public class WildTurkey implements Turkey {
     public void gobble() {
-        System.out.println("칠면조 꽥~");
+        System.out.println("칠면조 gobble gobble~");
     }
 
     public void fly() {
