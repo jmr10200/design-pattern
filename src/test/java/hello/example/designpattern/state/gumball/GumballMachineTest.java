@@ -2,8 +2,6 @@ package hello.example.designpattern.state.gumball;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class GumballMachineTest {
 
     @Test
@@ -12,31 +10,31 @@ class GumballMachineTest {
 
         System.out.println(gumballMachine);
 
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
 
         System.out.println(gumballMachine);
 
-        gumballMachine.insertQuarter();
-        gumballMachine.ejectQuarter();
+        gumballMachine.insertCoin();
+        gumballMachine.ejectCoin();
         gumballMachine.turnCrank();
 
         System.out.println(gumballMachine);
 
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
-        gumballMachine.ejectQuarter();
+        gumballMachine.ejectCoin();
 
         System.out.println(gumballMachine);
 
-        gumballMachine.insertQuarter();
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
-        gumballMachine.insertQuarter();
+        gumballMachine.insertCoin();
         gumballMachine.turnCrank();
 
         System.out.println(gumballMachine);
