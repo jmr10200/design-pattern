@@ -1,20 +1,20 @@
-package hello.example.designpattern.state.gumballstate;
+package hello.example.designpattern.state.gachastate;
 
 /**
  * 판매대기 상태 정보 : 동전 X
  */
 public class NoCoinState implements State {
 
-    GumballMachine gumballMachine;
+    GachaMachine gachaMachine;
 
-    public NoCoinState(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
+    public NoCoinState(GachaMachine gachaMachine) {
+        this.gachaMachine = gachaMachine;
     }
 
     @Override
     public void insertCoin() {
         System.out.println("동전을 넣습니다.");
-        gumballMachine.setState(gumballMachine.getHasCoinState());
+        gachaMachine.setState(gachaMachine.getHasCoinState());
     }
 
     @Override
@@ -24,7 +24,7 @@ public class NoCoinState implements State {
 
     @Override
     public void turnCrank() {
-        System.out.println("동전이 없습니다. 손잡이를 돌려도 검볼이 나오지 않습니다.");
+        System.out.println("동전이 없습니다. 손잡이를 돌려도 뽑기가 나오지 않습니다.");
     }
 
     @Override

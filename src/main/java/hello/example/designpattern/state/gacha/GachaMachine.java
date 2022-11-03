@@ -1,6 +1,6 @@
-package hello.example.designpattern.state.gumball;
+package hello.example.designpattern.state.gacha;
 
-public class GumballMachine {
+public class GachaMachine {
     // 각 상태를 저장하기위한 인스턴스변수를 만들어 정의
     final static int SOLD_OUT = 0; // 매진
     final static int NO_COIN = 1; // 동전 없음
@@ -8,9 +8,9 @@ public class GumballMachine {
     final static int SOLD = 3; // 판매
 
     int state = SOLD_OUT; // 현재 상태를 저장하는 인스턴스 변수
-    int count = 0; // 검볼 갯수
+    int count = 0; // 뽑기 갯수
 
-    public GumballMachine(int count) {
+    public GachaMachine(int count) {
         this.count = count;
         if (count > 0) {
             state = NO_COIN;
@@ -30,7 +30,7 @@ public class GumballMachine {
             System.out.println("sold out! 다 팔렸어요. 돈 넣지마세요");
         } else if (state == SOLD) {
             // 판매중 상태
-            System.out.println("잠시만 기다려주세요. 검볼이 나올거에요");
+            System.out.println("잠시만 기다려주세요. 뽑기가 나올거에요");
         }
     }
 
@@ -59,7 +59,7 @@ public class GumballMachine {
         } else if (state == SOLD_OUT) {
             System.out.println("매진 되었습니다");
         } else if (state == HAS_COIN) {
-            System.out.println("손잡이를 돌렸습니다. 검볼이 나올거에요");
+            System.out.println("손잡이를 돌렸습니다. 뽑기가 나올거에요");
             state = SOLD;
             dispense();
         }
@@ -67,10 +67,10 @@ public class GumballMachine {
 
     private void dispense() {
         if (state == SOLD) {
-            System.out.println("검볼이 나가고 있어요");
+            System.out.println("뽑기가 나가고 있어요");
             count = count - 1;
             if (count == 0) {
-                System.out.println("검볼이 없어요");
+                System.out.println("뽑기 재고가 없어요");
                 state = SOLD_OUT;
             } else {
                 state = NO_COIN;
@@ -80,7 +80,7 @@ public class GumballMachine {
         } else if (state == SOLD_OUT) {
             System.out.println("매진 입니다.");
         } else if (state == HAS_COIN) {
-            System.out.println("검볼이 나갈 수 없어요.");
+            System.out.println("뽑기가 나갈 수 없어요.");
         }
     }
     // 이하 삭제
@@ -91,20 +91,17 @@ public class GumballMachine {
 
     public String toString() {
         StringBuffer result = new StringBuffer();
-        result.append("\n==== 검볼 자판기 ==== ");
+        result.append("==== 뽑기 자판기 ==== \n");
         result.append("재고 : " + count + "  개");
-        if (count != 1) {
-            result.append("s");
-        }
         result.append("\n현재 자판기 상태는 ");
         if (state == SOLD_OUT) {
-            result.append("sold out!!");
+            result.append("매진 : sold out!!");
         } else if (state == NO_COIN) {
-            result.append("동전 넣어주세요");
+            result.append("판매대기(돈 X) : 동전 넣어주세요");
         } else if (state == HAS_COIN) {
-            result.append("손잡이를 돌려주세요");
+            result.append("판매대기(돈 O) : 손잡이를 돌려주세요");
         } else if (state == SOLD) {
-            result.append("검볼이 나오고 있습니다.");
+            result.append("판매중 : 뽑기가 나오고 있습니다.");
         }
         result.append("\n");
         return result.toString();

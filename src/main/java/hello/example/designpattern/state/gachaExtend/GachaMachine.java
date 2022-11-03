@@ -1,6 +1,6 @@
-package hello.example.designpattern.state.gumballExtend;
+package hello.example.designpattern.state.gachaExtend;
 
-public class GumballMachine {
+public class GachaMachine {
 
     State soldOutState; // 매진 상태
     State noCoinState; // 판매대기 상태 : 코인 없는 상태
@@ -12,7 +12,7 @@ public class GumballMachine {
     State state;
     int count = 0;
 
-    public GumballMachine(int numberGumballs) {
+    public GachaMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
         noCoinState = new NoCoinState(this);
         hasCoinState = new HasCoinState(this);
@@ -40,12 +40,12 @@ public class GumballMachine {
     public void turnCrank() {
         // 손잡이 돌림
         state.turnCrank();
-        // 검볼 판매여부
+        // 뽑기 판매여부
         state.dispense();
     }
 
     public void releaseBall() {
-        System.out.println("검볼이 나왔습니다.");
+        System.out.println("뽑기가 나왔습니다.");
         if (count > 0) {
             count = count - 1;
         }
@@ -53,7 +53,7 @@ public class GumballMachine {
 
     public void refill(int count) {
         this.count += count;
-        System.out.println("검볼 " + count + " 개 리필!, 현재 " + this.count + " 개 입니다.");
+        System.out.println("뽑기 " + count + " 개 리필!, 현재 " + this.count + " 개 입니다.");
         state.refill();
     }
 
@@ -92,7 +92,7 @@ public class GumballMachine {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("===== Gumball Machine =====\n");
+        sb.append("===== Gacha Machine =====\n");
         sb.append("머신 상태 : " + state + "\n");
         sb.append("재고 : " + count + " 개\n");
         return sb.toString();

@@ -1,14 +1,14 @@
-package hello.example.designpattern.state.gumballExtend;
+package hello.example.designpattern.state.gachaExtend;
 
 /**
  * 매진 상태 정보
  */
 public class SoldOutState implements State {
 
-    GumballMachine gumballMachine;
+    GachaMachine gachaMachine;
 
-    public SoldOutState(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
+    public SoldOutState(GachaMachine gachaMachine) {
+        this.gachaMachine = gachaMachine;
     }
 
     @Override
@@ -28,12 +28,12 @@ public class SoldOutState implements State {
 
     @Override
     public void dispense() {
-        System.out.println("검볼이 없습니다.");
+        System.out.println("뽑기가 없습니다.");
     }
 
     @Override
     public void refill() {
-        gumballMachine.setState(gumballMachine.getNoCoinState());
+        gachaMachine.setState(gachaMachine.getNoCoinState());
     }
 
     @Override

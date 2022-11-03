@@ -1,4 +1,4 @@
-package hello.example.designpattern.state.gumballstate;
+package hello.example.designpattern.state.gachastate;
 
 public interface State {
 
