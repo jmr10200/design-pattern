@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class GumballMachineTest {
 
     @Test
-    void examTest() {
+    void exampleTest() {
         GumballMachine gumballMachine = new GumballMachine(5);
 
         System.out.println(gumballMachine);
