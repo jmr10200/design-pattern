@@ -1,4 +1,4 @@
-package hello.example.designpattern.command.baiscExtend;
+package hello.example.designpattern.command.basicextend;
 
 /**
  * 실행명령이 없는 초기화용 구현 커맨드

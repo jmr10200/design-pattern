@@ -1,4 +1,4 @@
-package hello.example.designpattern.command.baiscExtend;
+package hello.example.designpattern.command.basicextend;
 
 public class RemoteController {
 

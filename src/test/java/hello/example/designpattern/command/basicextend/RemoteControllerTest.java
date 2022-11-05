@@ -1,8 +1,6 @@
-package hello.example.designpattern.command.baiscExtend;
+package hello.example.designpattern.command.basicextend;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class RemoteControllerTest {
 
