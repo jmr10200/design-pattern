@@ -11,11 +11,11 @@ public class Clerk {
     }
 
     public void printMenu() {
-        Iterator stakeIterator = steakMenu.createIterator();
+        Iterator steakIterator = steakMenu.createIterator();
         Iterator burgerIterator = burgerMenu.createIterator();
 
         System.out.println("===== Steak Menu =====");
-        printMenu(stakeIterator);
+        printMenu(steakIterator);
         System.out.println("===== Burger Menu =====");
         printMenu(burgerIterator);
     }
