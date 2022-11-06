@@ -1,8 +1,7 @@
-package hello.example.designpattern.iterator.dinermergestream;
+package hello.example.designpattern.iterator.dinermergeiter;
 
 import java.util.Arrays;
 import java.util.Iterator;
-import java.util.stream.Stream;
 
 /**
  * 스테이크 메뉴 : Array

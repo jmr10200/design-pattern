@@ -1,4 +1,4 @@
-package hello.example.designpattern.iterator.dinermergestream;
+package hello.example.designpattern.iterator.dinermergeiter;
 
 /**
  * 두 가게의 합의한 메뉴

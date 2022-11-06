@@ -1,9 +1,8 @@
-package hello.example.designpattern.iterator.dinermergestream;
+package hello.example.designpattern.iterator.dinermergeiter;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Stream;
 
 /**
  * 햄버거 메뉴 : ArrayList

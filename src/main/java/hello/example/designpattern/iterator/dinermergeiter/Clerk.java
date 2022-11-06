@@ -1,4 +1,4 @@
-package hello.example.designpattern.iterator.dinermergestream;
+package hello.example.designpattern.iterator.dinermergeiter;
 
 import java.util.Iterator;
 
