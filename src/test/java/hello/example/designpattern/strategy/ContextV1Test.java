@@ -13,6 +13,9 @@ public class ContextV1Test {
 
     /**
      * 전략 패턴 적용
+     *
+     * 선 조립, 후 실행 방법에 적합하다.
+     * 실행시점에는 이미 전략이 설정되어있으므로, 실행만하면 된다.
      */
     @Test
     void strategyV1() {
