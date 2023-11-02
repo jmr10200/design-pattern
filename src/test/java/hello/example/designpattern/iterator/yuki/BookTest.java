@@ -10,7 +10,8 @@ class BookTest {
 
     @Test
     void main() {
-        BookShelf bookShelf = new BookShelf(4);
+//        BookShelf bookShelf = new BookShelf(4);
+        BookShelf bookShelf = new BookShelf();
         bookShelf.appendBook(new Book("1.bible"));
         bookShelf.appendBook(new Book("2.design patterns"));
         bookShelf.appendBook(new Book("3.javascript basic"));
@@ -28,6 +29,7 @@ class BookTest {
         for (Book book : bookShelf) {
             System.out.println(book.getName());
         }
+        System.out.println("book size = " + bookShelf.getLength());
     }
 
 }
