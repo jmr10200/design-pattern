@@ -6,7 +6,7 @@
 
 <br>
 
-![adapter-1.png](img/adapter-1.png)
+<img src="img/adapter-1.png" width="400px" title="시스템이 딱 맞아서 사용하기 어려울 때는 변환기(어댑터)가 필요하다" alt="adapter-1"></img><br/>
 220v를 사용하는 충전기를 110v를 사용하는 나라에 여행갔을때 사용하려면 변환해주는 어댑터가 필요하다. <br>
 
 프로그래밍 세계에서도 이미 존재하는 시스템에 새롭게 제공받는 시스템을 그대로 사용할 수 없을때 이를 변환해야 하는 경우가 발생한다. 이때 사용하는 디자인 패턴이 어댑터 패턴이다. <br>
@@ -87,5 +87,5 @@ public class PrintBannerByDelegation extends PrintByDelegation {
 이때, 기존에 존재하는 해당 코드(Adaptee)를 한겹 덧씌워 사용할 수 있게 만드는 것이 Adapter 이다. 만약 버그가 발생하면 기존의 코드는 버그가 없다는 것을 알기에 감싸준 Adapter 를 점검하면 될 것이다.
 
 ### 2. 버전과 호환성 관리에 유용하다.
-![adapter-2.png](img/adapter-2.png)
+<img src="img/adapter-2.png" width="300px" title="어댑터는 버전과 호환성 관리에 유용하다." alt="adapter-2"></img><br/>
 버전 업을 할 때는 '구버전과의 호환성'이 문제가 된다. Adapter 패턴을 이용하면 구버전과 새버전이 공존할 수 있도록 하고, 유지보수까지 편하게 도와준다. 새버전의 클래스를 사용하여 구버전의 메소드를 구현하는 Adapter 를 만들면 된다.
