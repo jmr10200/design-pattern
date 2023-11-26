@@ -19,4 +19,14 @@ class SingletonTest {
         System.out.println("== End ==");
     }
 
+    @Test
+    void ticketMakerMain() {
+        System.out.println("== Ticket Maker Start ==");
+        TicketMaker obj1 = TicketMaker.getInstance();
+        for (int i = 0; i < 10; i++) {
+            System.out.println(obj1.getNextTicketNumber());
+        }
+        System.out.println("== Ticket Maker End ==");
+    }
+
 }
