@@ -29,4 +29,37 @@ class SingletonTest {
         System.out.println("== Ticket Maker End ==");
     }
 
+    @Test
+    void tripleMain() {
+        System.out.println("== Start ==");
+
+        Triple instance1 = Triple.getInstance("ALPHA");
+        Triple instance2 = Triple.getInstance("BETA");
+        Triple instance3 = Triple.getInstance("GAMMA");
+
+        Triple instanceA = Triple.getInstance("ALPHA");
+        Triple instanceB = Triple.getInstance("BETA");
+        Triple instanceC = Triple.getInstance("DELTA");
+
+        if (instance1 == instanceA) {
+            System.out.println("instance1 == instanceA");
+        } else {
+            System.out.println("instance1 != instanceA");
+        }
+
+        if (instance2 == instanceB) {
+            System.out.println("instance2 == instanceB");
+        } else {
+            System.out.println("instance2 != instanceB");
+        }
+
+        if (instance3 == instanceC) {
+            System.out.println("instance3 == instanceC");
+        } else {
+            System.out.println("instance3 != instanceC");
+        }
+
+        System.out.println("== End ==");
+    }
+
 }
