@@ -17,6 +17,7 @@ class PrototypeTest {
         MessageBox sBox = new MessageBox('/');
 
         // 등록
+        // strong message 이름으로 UnderlinePen 에서 ulchar 가 '-' 인 인스턴스를 등록
         manager.register("strong message", upen);
         manager.register("warning box", mBox);
         manager.register("slash box", sBox);
