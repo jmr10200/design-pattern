@@ -23,6 +23,8 @@ Product 인터페이스와 Manager 클래스는 framework 패키지에 속하며
 Manager 클래스는 createCopy() 메소드를 호출하지만 구체적으로 어느 클래스의 어느 인스턴스를 복제할지 관여하지 않는다. <br>
 Product 인터페이스를 구현한 클래스이기만 하면 해당 인스턴스를 복제할 수 있다. <br>
 
+<br>
+
 ### (1) 복제를 가능하게 하는 Product 인터페이스
 
 java.lang.Cloneable 인터페이스를 상속한 Product 인터페이스는 복제를 가능하게 한다. <br>
@@ -122,10 +124,10 @@ public class MessageBox implements Product {
   * [UnderlinePen 클래스](../src/main/java/hello/example/designpattern/prototype/yuki/UnderlinePen.java)
 * Client (이용자)
   * 인스턴스를 복제하는 메소드를 이용해 새로운 인스턴스 생성
-  * [Manager 클래](../src/main/java/hello/example/designpattern/prototype/yuki/framework/Manager.java)
+  * [Manager 클래스](../src/main/java/hello/example/designpattern/prototype/yuki/framework/Manager.java)
 
 
-<hr>
+<br><hr>
 
 
 ## # 정리
@@ -143,6 +145,7 @@ public class MessageBox implements Product {
 #### (6) 클래스 계층 구조에서의 확장
 * 클래스 계층 구조에서 새로운 클래스를 추가할 경우, 기존 클래스의 인스턴스를 복제하여 새로운 클래스의 인스턴스를 생성하는 것이 유용하다. 클래스 추가에의해 발생하는 초기화 과정을 최소화하고 코드 중복을 피할 수 있기 때문이다.
 
+<br>
 
 ### 2. 결합도를 낮추게 도와준다.
 객체지향 프로그래밍의 목표 중 하나는 '부품으로 재사용' 하는 것이다. <br>
