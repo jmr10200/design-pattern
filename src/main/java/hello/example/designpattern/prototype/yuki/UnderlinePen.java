@@ -10,6 +10,11 @@ public class UnderlinePen implements Product {
         this.ulchar = ulchar;
     }
 
+    // 복사 생성자
+    public UnderlinePen(UnderlinePen underlinePen) {
+        this.ulchar = underlinePen.ulchar;
+    }
+
     @Override
     public void use(String str) {
         int ulen = str.length();
@@ -20,14 +25,21 @@ public class UnderlinePen implements Product {
         System.out.println();
     }
 
+//    @Override
+//    public Product createCopy() {
+//        Product product = null;
+//        try {
+//            product = (Product) clone();
+//        } catch (CloneNotSupportedException e) {
+//            e.printStackTrace();
+//        }
+//        return product;
+//    }
+
+    // 복사 생성자 이용
+
     @Override
     public Product createCopy() {
-        Product product = null;
-        try {
-            product = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return product;
+        return new UnderlinePen(this);
     }
 }

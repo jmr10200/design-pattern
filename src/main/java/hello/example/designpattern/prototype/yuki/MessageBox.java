@@ -10,6 +10,11 @@ public class MessageBox implements Product {
         this.decochar = decochar;
     }
 
+    // 복사 생성자
+    public MessageBox(MessageBox prototype) {
+        this.decochar = prototype.decochar;
+    }
+
     @Override
     public void use(String str) {
         int decolen = 1 + str.length() + 1;
@@ -27,14 +32,20 @@ public class MessageBox implements Product {
         System.out.println();
     }
 
+//    @Override
+//    public Product createCopy() {
+//        Product product = null;
+//        try {
+//            product = (Product) clone();
+//        } catch (CloneNotSupportedException e) {
+//            e.printStackTrace();
+//        }
+//        return product;
+//    }
+
+    // 복사 생성자 이용
     @Override
     public Product createCopy() {
-        Product product = null;
-        try {
-            product = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return product;
+        return new MessageBox(this);
     }
 }
