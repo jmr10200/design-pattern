@@ -10,7 +10,7 @@ public class UnderlinePen implements Product {
         this.ulchar = ulchar;
     }
 
-    // 복사 생성자
+    // 복사 생성자: 같은 클래스의 인스턴스를 인수로 가지고 인스턴스 생성 시 필드를 복사하는 생성자
     public UnderlinePen(UnderlinePen underlinePen) {
         this.ulchar = underlinePen.ulchar;
     }
@@ -37,7 +37,6 @@ public class UnderlinePen implements Product {
 //    }
 
     // 복사 생성자 이용
-
     @Override
     public Product createCopy() {
         return new UnderlinePen(this);
