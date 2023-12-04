@@ -6,3 +6,4 @@
 ### [4. 팩토리 메소드 패턴 (Factory Method Pattern)](summary/factory_method.md) : 하위 클래스에서 인스턴스를 만든다.
 ### [5. 싱글톤 패턴 (Singleton Pattern)](summary/singleton.md) : 인스턴스를 단 하나만 만든다.
 ### [6. 프로토타입 패턴 (Prototype Pattern)](summary/prototype.md) : 복사해서 인스턴스를 만든다.
+### [7. 빌더 패턴 (Builder Pattern)](summary/builder.md) : 복잡한 인스턴스를 조립한다.
