@@ -28,4 +28,13 @@ public class ComputerDirector {
                 .setOs("windows 11 home")
                 .build();
     }
+
+    public Computer defaultConstructPC() {
+        return builder.setCpu("Intel i5")
+                .setRam("16GB")
+                .setGraphic("AMD RADEON 7")
+                .setStorage("1GB HDD")
+                .setOs("windows 11 home")
+                .build();
+    }
 }
