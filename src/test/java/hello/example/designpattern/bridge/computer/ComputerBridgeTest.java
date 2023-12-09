@@ -2,9 +2,7 @@ package hello.example.designpattern.bridge.computer;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class BridgeComputerTest {
+class ComputerBridgeTest {
 
     @Test
     void laptopMain() {
