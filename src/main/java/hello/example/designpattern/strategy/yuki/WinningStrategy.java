@@ -1,0 +1,26 @@
+package hello.example.designpattern.strategy.yuki;
+
+import java.util.Random;
+
+public class WinningStrategy implements HandStrategy {
+    private Random random;
+    private boolean won = false;
+    private Hand prevHand;
+
+    public WinningStrategy(int seed) {
+        random = new Random(seed);
+    }
+
+    @Override
+    public Hand nextHand() {
+        if (!won) {
+            prevHand = Hand.getHands(random.nextInt(3));
+        }
+        return prevHand;
+    }
+
+    @Override
+    public void study(boolean win) {
+        won = win;
+    }
+}
