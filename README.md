@@ -8,3 +8,4 @@
 ### [6. 프로토타입 패턴 (Prototype Pattern)](summary/prototype.md) : 복사해서 인스턴스를 만든다.
 ### [7. 빌더 패턴 (Builder Pattern)](summary/builder.md) : 복잡한 인스턴스를 조립한다.
 ### [8. 추상 팩토리 패턴 (Abstract Factory Pattern)](summary/abstract_factory.md) : 관련 부품을 조합하여 제품을 만든다.
+### [9. 브릿지 패턴 (Bridge Pattern)](summary/bridge.md) : 기능 계층과 구현 계층을 나눈다.
