@@ -15,4 +15,8 @@ public class Desktop extends Computer {
         os.installOS();
         os.runProgram();
     }
+
+    void displayHighGraphic() {
+        System.out.println("고성능 그래픽을 지원합니다.");
+    }
 }

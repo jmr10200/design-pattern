@@ -15,4 +15,8 @@ public class Laptop extends Computer {
         os.installOS();
         os.runProgram();
     }
+
+    void folding() {
+        System.out.println("Laptop 을 접어서 사용합니다.");
+    }
 }

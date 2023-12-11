@@ -57,17 +57,17 @@ AbstractClass
 <br><hr>
 
 ### <예제 프로그램>
-Bridge 패턴을 사용해 컴퓨터를 만드는 프로그램
+Bridge 패턴을 사용해 컴퓨터를 설명한다. 컴퓨터는 기능과 운영체제(OS)로 나뉘며 여기서 기능은 추상화의 한 측면이고, 운영체제는 이를 구체화하는 구현자 역할을 한다.
 
-| **클래스 계층**    | **역할**                         | **이름**                                                                                                                   | **내용**                                                                                                  |
-|:--------------|:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| 기능의 클래스 계층    | Abstraction (추상화)                | [Computer 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Computer.java)                        | 추상 팩토리에서 생산되는 추상적인 제품 Computer 로 구체적인 제품은 하위 클래스를 통해 만든다.                                               |
-| 기능의 클래스 계층    | RefinedAbstraction (세부적인 추상화)  | [Desktop 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Desktop.java)                          | 추상적인 제품 Computer 를 구현한 구체적인 제품 Desktop 클래스                                                              |
-| 기능의 클래스 계층    | RefinedAbstraction (세부적인 추상화)  | [Loptop 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Laptop.java)                            | 추상적인 제품 Computer 를 구현한 구체적인 제품 Laptop 클래스                                                               |
-| 구현의 클래스 계층    | Implementor (구현자)              | [OperatingSystem 인터페이스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/OperatingSystem.java)        | 추상적인 제품 Keyboard 를 구현한 구체적인 제품 MechanicaKeyboard 클래스                                                    |
-| 구현의 클래스 계층    | ConcreteImplementor (구체적인 구현자) | [Windows 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Windows.java)                          | 추상적인 제품 Keyboard 를 구현한 구체적인 제품 MembraneKeyboard 클래스                                                     |
-| 구현의 클래스 계층    | ConcreteImplementor (구체적인 구현자) | [MacOS 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/MacOs.java)                              | 추상 팩토리 인터페이스를 구현한 구체적인 데스크탑을 만드는 팩토리 클래스                                                                |
-| -             | 클라이언트                          | [ComputerBridgeTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/bridge/computer/ComputerBridgeTest.java) | 동작 테스트용 클래스                                                                                             |
+| **클래스 계층**    | **역할**                         | **이름**                                                                                                                   | **내용**                                        |
+|:--------------|:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| 기능의 클래스 계층    | Abstraction (추상화)                | [Computer 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Computer.java)                        | Computer 의 기능, 추상화 역할                         |
+| 기능의 클래스 계층    | RefinedAbstraction (세부적인 추상화)  | [Desktop 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Desktop.java)                          | Computer 에 '고성능 그래픽'이라는 세부적인 기능을 추가한 Desktop 클래스 |
+| 기능의 클래스 계층    | RefinedAbstraction (세부적인 추상화)  | [Loptop 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Laptop.java)                            | Computer 에 '접을수 있다'는 세부적인 기능을 추가한 Laptop 클래스  |
+| 구현의 클래스 계층    | Implementor (구현자)              | [OperatingSystem 인터페이스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/OperatingSystem.java)        | 구현자 인터페이스, 추상화를 실제로 구현하는 역할                   |
+| 구현의 클래스 계층    | ConcreteImplementor (구체적인 구현자) | [Windows 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/Windows.java)                          | OperatingSystem 인터페이스를 구현한 구체적인 OS 클래스        |
+| 구현의 클래스 계층    | ConcreteImplementor (구체적인 구현자) | [MacOS 클래스 (소스보기)](../src/main/java/hello/example/designpattern/bridge/computer/MacOs.java)                              | OperatingSystem 인터페이스를 구현한 구체적인 OS 클래스        |
+| -             | 클라이언트                          | [ComputerBridgeTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/bridge/computer/ComputerBridgeTest.java) | 동작 테스트용 클래스                                   |
 
 * Abstraction (추상화)
   * 기능의 클래스 계층의 최상위 클래스
