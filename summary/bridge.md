@@ -88,7 +88,7 @@ Bridge 패턴을 사용해 컴퓨터를 설명한다. 컴퓨터는 기능과 운
 <br><hr>
 
 ### (1) Bridge 패턴의 클래스 다이어그램
-<img src="img/bridge-1.png" width="400px" title="브릿지 (Bridge) 패턴의 클래스 다이어그램" alt="bridge-1"></img><br/>
+<img src="img/bridge-1.png" width="600px" title="브릿지 (Bridge) 패턴의 클래스 다이어그램" alt="bridge-1"></img><br/>
 
 Abstraction 은 Implementor에 대한 참조(impl)를 가지고 있다. <br>
 Abstraction 의 메소드가 호출되면 해당 메소드는 Implementor 의 메소드를 호출한다.<br>
