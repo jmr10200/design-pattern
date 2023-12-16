@@ -11,3 +11,5 @@
 ### [9. 브릿지 패턴 (Bridge Pattern)](summary/bridge.md) : 기능 계층과 구현 계층을 나눈다.
 ### [10. 전략 패턴, 스트래티지 패턴 (Strategy Pattern)](summary/strategy.md) : 알고리즘을 모두 바꾼다.
 ### [11. 컴포지트 패턴 (Composite Pattern)](summary/composite.md) : 그릇과 내용물을 동일시한다.
+### [12. 데코레이터 패턴 (Decorator Pattern)](summary/decorator.md) : 장식틀과 내용물을 동일시한다.
+
