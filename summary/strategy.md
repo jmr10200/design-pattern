@@ -19,7 +19,7 @@ Strategy 패턴을 사용해 고객 등급에 맞는 할인을 적용하는 결�
 
 | **역할**                     | **이름**                                                                                                                       | **내용**                                                   |
 |:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| Strategy (전략)              | [DiscountStrategy 인터페이 (소스보기)](../src/main/java/hello/example/designpattern/strategy/discount/DiscountStrategy.java)         | 전략 인터페이스                                                 |
+| Strategy (전략)              | [DiscountStrategy 인터페이스 (소스보기)](../src/main/java/hello/example/designpattern/strategy/discount/DiscountStrategy.java)         | 전략 인터페이스                                                 |
 | ConcreteStrategy (구체적인 전략) | [RegularDiscount 클래스 (소스보기)](../src/main/java/hello/example/designpattern/strategy/discount/RegularDiscount.java)            | 전략 인터페이스를 실제로 구현 <br> 비회원은 할인 미적용                        |
 | ConcreteStrategy (구체적인 전략) | [MemberDiscount 클래스 (소스보기)](../src/main/java/hello/example/designpattern/strategy/discount/MemberDiscount.java)              | 전략 인터페이스를 실제로 구현 <br> 회원은 10% 할인 적용                      |
 | ConcreteStrategy (구체적인 전략) | [VipDiscount 클래스 (소스보기)](../src/main/java/hello/example/designpattern/strategy/discount/VipDiscount.java)                    | 전략 인터페이스를 실제로 구현 <br> VIP는 20% 할인 적용                     |
