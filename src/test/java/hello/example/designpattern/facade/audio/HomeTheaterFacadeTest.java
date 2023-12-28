@@ -1,4 +1,4 @@
-package hello.example.designpattern.facade;
+package hello.example.designpattern.facade.audio;
 
 import hello.example.designpattern.facade.audio.*;
 import org.junit.jupiter.api.Test;
