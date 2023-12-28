@@ -1,4 +1,4 @@
-package hello.example.designpattern.facade;
+package hello.example.designpattern.facade.audio;
 
 public class Screen {
     String description;

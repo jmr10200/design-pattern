@@ -1,4 +1,4 @@
-package hello.example.designpattern.facade;
+package hello.example.designpattern.facade.audio;
 
 public class TheaterLights {
     String description;

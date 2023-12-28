@@ -1,8 +1,7 @@
 package hello.example.designpattern.facade;
 
+import hello.example.designpattern.facade.audio.*;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HomeTheaterFacadeTest {
 
