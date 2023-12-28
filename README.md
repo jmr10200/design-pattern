@@ -13,4 +13,6 @@
 ### [11. 컴포지트 패턴 (Composite Pattern)](summary/composite.md) : 그릇과 내용물을 동일시한다.
 ### [12. 데코레이터 패턴 (Decorator Pattern)](summary/decorator.md) : 장식틀과 내용물을 동일시한다.
 ### [13. 방문자 패턴 (Visitor Pattern)](summary/visitor.md) : 데이터 구조를 돌아다니면서 처리한다.
+### [14. 책임 연쇄 패턴 (Chain of Responsibility Pattern)](summary/chain_of_responsibility.md) : 책임을 떠넘긴다.
+
 
