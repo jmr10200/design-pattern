@@ -13,7 +13,7 @@
 ### <예제 프로그램>
 Chain of Responsibility 패턴을 사용해 Trouble이 발생했을 때 누가 처리할지 정하는 예제
 
-| **역할 **         | **이름**                                                                                                                                                          | **내용**                                |
+| **역할**          | **이름**                                                                                                                                                          | **내용**                                |
 |:----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | -               | [Trouble 클래스 (소스보기)](../src/main/java/hello/example/designpattern/chainofresponsibility/yuki/Trouble.java)                                                      | 발생한 트러블을 나타내는 클래스로 트러블 번호(number) 갖는다 |
 | Handler         | [Support 클래스 (소스보기)](../src/main/java/hello/example/designpattern/chainofresponsibility/yuki/Support.java)                                                      | 트러블을 해결해주는 추상 클래스                     |
