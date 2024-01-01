@@ -21,4 +21,25 @@ class ChatMediatorTest {
         user1.sendMessage("Hello, I'm Ariana");
     }
 
+    @Test
+    void main2() {
+        ChatMediator chatRoom = new ChatRoom();
+
+        ChatUser user1 = new ChatUser("Ari", chatRoom);
+        ChatUser user2 = new ChatUser("Bailey", chatRoom);
+        ChatUser user3 = new ChatUser("Catalina", chatRoom);
+        ChatUser user4 = new ChatUser("Dorothy", chatRoom);
+
+        chatRoom.addUser(user1);
+        chatRoom.addUser(user2);
+        chatRoom.addUser(user3);
+        chatRoom.addUser(user4);
+
+        // 전체 메시지
+        user1.sendMessage("Hello, guys~!!");
+
+        // 특정인에게 메시지
+        user2.sendDirectMessage("Dorothy, This is DM.", user4);
+    }
+
 }

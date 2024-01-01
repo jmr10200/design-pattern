@@ -18,11 +18,13 @@ public class User {
     }
 
     public void sendMessage(String message) {
-        System.out.println(name + " sends message: " + message);
+        System.out.println("-------------------------------------------");
+        System.out.println("[" + name + "] sends message: " + message);
+        System.out.println("-------------------------------------------");
         mediator.sendMessage(message, this);
     }
 
     public void receiveMessage(String message) {
-        System.out.println(name + " recevies message: " + message);
+        System.out.println("[" + name + "] receives message: " + message);
     }
 }
