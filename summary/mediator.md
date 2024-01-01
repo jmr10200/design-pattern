@@ -14,7 +14,7 @@ Mediator 패턴을 사용해 나타낸 간단한 채팅 어플리케이션
 | Colleague          | [User 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/User.java)                               |            |
 | ConcreteMediator   | [ChatRoom 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatRoom.java)                       |         |
 | ConcreteColleague  | [ChatUser 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatUser.java)                       |  |
-| Client             | [ComputerBuilderTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/mediator/chat/ChatMediatorTest.java) | 동작 테스트용 클래스                                                      |
+| Client             | [ChatMediatorTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/mediator/chat/ChatMediatorTest.java) | 동작 테스트용 클래스                                                      |
 
 
 <br><hr>
