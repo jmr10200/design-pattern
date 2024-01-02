@@ -28,8 +28,6 @@ State 패턴을 사용해 표현한 TV를 켜고 끄는 동작 예제
 ### ■ State 패턴의 클래스 다이어 그램
 <img src="img/state-1.png" width="600px" title="State 패턴의 클래스 다이어그램" alt="state-1"></img><br/>
 
-<br>
-
 * State (상태)
   * 특정 상태에서의 인터페이스를 정의 (특정 상태에서의 동작을 캡슐화)
   * Context 에서 사용되는 (상태에 의존한 동작을 하는) 메소드들을 선언
