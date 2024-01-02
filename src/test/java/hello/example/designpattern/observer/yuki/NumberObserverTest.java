@@ -2,8 +2,6 @@ package hello.example.designpattern.observer.yuki;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class NumberObserverTest {
 
     @Test
@@ -23,7 +21,7 @@ class NumberObserverTest {
         NumberGenerator generator = new RandomNumberGenerator();
         Observer observer1 = new DigitObserver();
         Observer observer2 = new GraphObserver();
-        Observer observer3 = new UlineObserver();
+        Observer observer3 = new StarsObserver();
 
         generator.addObserver(observer1);
         generator.addObserver(observer2);

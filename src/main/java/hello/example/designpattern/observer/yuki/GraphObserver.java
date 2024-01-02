@@ -6,7 +6,7 @@ public class GraphObserver implements Observer {
         System.out.print("GraphObserver: ");
         int count = generator.getNumber();
         for (int i = 0; i < count; i++) {
-            System.out.print("*");
+            System.out.print("=");
         }
         System.out.println("");
         try {

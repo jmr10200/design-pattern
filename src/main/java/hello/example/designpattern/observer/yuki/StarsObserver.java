@@ -1,12 +1,12 @@
 package hello.example.designpattern.observer.yuki;
 
-public class UlineObserver implements Observer {
+public class StarsObserver implements Observer {
     @Override
     public void update(NumberGenerator generator) {
-        System.out.print("UlineObserver: ");
+        System.out.print("StarsObserver: ");
         int count = generator.getNumber();
         for (int i = 0; i < count; i++) {
-            System.out.print("_");
+            System.out.print("*");
         }
         System.out.println("");
         try {
