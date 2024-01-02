@@ -17,3 +17,4 @@
 ### [15. 파사드 패턴 (Facade Pattern)](summary/facade.md) : 단순한 창구를 만든다.
 ### [16. 중재자 패턴 (Mediator Pattern)](summary/facade.md) : 중재자를 통해 처리한다.
 ### [17. 옵저버 패턴 (Observer Pattern)](summary/observer.md) : 상태 변화를 알려준다.
+### [18. 메멘토 패턴 (Memento Pattern)](summary/memento.md) : 상태를 저장한다.
