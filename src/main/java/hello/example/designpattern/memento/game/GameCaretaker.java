@@ -23,6 +23,7 @@ public class GameCaretaker {
         }
     }
 
+    // 아래 메소드는 학습용
     public void savedGameStateList() {
         StringBuilder sb = new StringBuilder();
         sb.append("savedGameStateList (Level, Score) = ");
