@@ -19,3 +19,4 @@
 ### [17. 옵저버 패턴 (Observer Pattern)](summary/observer.md) : 상태 변화를 알려준다.
 ### [18. 메멘토 패턴 (Memento Pattern)](summary/memento.md) : 상태를 저장한다.
 ### [19. 상태 패턴, 스테이트 패턴 (State Pattern)](summary/state.md) : 상태를 클래스로 표현한다.
+### [20. 플라이웨이트 패턴 (Flyweight Pattern)](summary/flyweight.md) : 같은 것은 공유해서 낭비를 없앤다.
