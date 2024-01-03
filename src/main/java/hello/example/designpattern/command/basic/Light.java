@@ -1,5 +1,8 @@
 package hello.example.designpattern.command.basic;
 
+/**
+ * Receiver
+ */
 public class Light {
 
     public Light() {
