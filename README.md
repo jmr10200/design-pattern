@@ -21,3 +21,4 @@
 ### [19. 상태 패턴, 스테이트 패턴 (State Pattern)](summary/state.md) : 상태를 클래스로 표현한다.
 ### [20. 플라이웨이트 패턴 (Flyweight Pattern)](summary/flyweight.md) : 같은 것은 공유해서 낭비를 없앤다.
 ### [21. 프록시 패턴 (Proxy Pattern)](summary/proxy.md) : 필요해지면 만든다.
+### [22. 커맨드 패턴 (Command Pattern)](summary/command.md) : 명령을 클래스로 표현한다.
