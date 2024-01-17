@@ -8,13 +8,13 @@
 ### <예제 프로그램>
 Mediator 패턴을 사용해 나타낸 간단한 채팅 어플리케이션
 
-| **역할**             | **이름**                                                                                                                | **내용**                                                           |
-|:-------------------|:----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| Mediator           | [ChatMediator 인터페이스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatMediator.java)             |       |
-| Colleague          | [User 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/User.java)                               |            |
-| ConcreteMediator   | [ChatRoom 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatRoom.java)                       |         |
-| ConcreteColleague  | [ChatUser 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatUser.java)                       |  |
-| Client             | [ChatMediatorTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/mediator/chat/ChatMediatorTest.java) | 동작 테스트용 클래스                                                      |
+| **역할**             | **이름**                                                                                                                | **내용**                                                                    |
+|:-------------------|:----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Mediator           | [ChatMediator 인터페이스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatMediator.java)             | 중재자 역할을 정의                                                                |
+| Colleague          | [User 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/User.java)                               | 사용자 역할을 정의                                                                |
+| ConcreteMediator   | [ChatRoom 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatRoom.java)                       | 실제 중재자로 중재자 역할 인터페이스를 구현                                                  |
+| ConcreteColleague  | [ChatUser 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatUser.java)                       | 실제 사용자로 사용자 역할 클래스를 확장 <br> 사용자는 중재자에 등록되어 중재자를 통해 다른 사용자들에게 메시지를 전송하고 수신 |
+| Client             | [ChatMediatorTest 실행 클래스 (소스보기)](../src/test/java/hello/example/designpattern/mediator/chat/ChatMediatorTest.java) | 동작 테스트용 클래스                                                               |
 
 
 <br><hr>
@@ -28,14 +28,14 @@ Mediator 패턴을 사용해 나타낸 간단한 채팅 어플리케이션
   * 예제 : [ChatMediator 인터페이스](../src/main/java/hello/example/designpattern/mediator/chat/ChatMediator.java)
 * Concrete Mediator (구체적인 중재자)
   * Mediator 의 인터페이스를 구현
-  * 예제 : [ChatRoom 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatRoom.java)
+  * 예제 : [ChatRoom 클래스](../src/main/java/hello/example/designpattern/mediator/chat/ChatRoom.java)
 * Colleague (동료)
   * Mediator(중재자)와 통신하는 객체
   * Colleague 는 서로 직접 통신하지 않고 Mediator(중재자)를 통해 간접적으로 통신
   * 예제 : [User 클래스](../src/main/java/hello/example/designpattern/mediator/chat/User.java)
 * Concrete Colleague (구체적인 동료)
   * Colleague 의 인터페이스를 구현
-  * 예제 : [ChatUser 클래스 (소스보기)](../src/main/java/hello/example/designpattern/mediator/chat/ChatUser.java)
+  * 예제 : [ChatUser 클래스](../src/main/java/hello/example/designpattern/mediator/chat/ChatUser.java)
 
 
 <br><hr>
